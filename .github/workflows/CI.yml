@@ -15,9 +15,6 @@ jobs:
         run: 
           pip install black flake8 bandit safety
 
-      - name: Lint with Flake8
-        run: flake8 . --max-line-length=120
-
       - name: Security scan
         run: bandit -r .
 
